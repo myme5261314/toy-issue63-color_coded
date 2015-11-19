@@ -1,7 +1,6 @@
 -x
-c++
+c
 -DDEBUG
 -Iinclude
 -Wall
--Werror
 -std=c++11
