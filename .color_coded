@@ -1,7 +1,6 @@
 -x
 c++
 -DDEBUG
--I/usr/local/include
 -Iinclude
 -Wall
 -Werror

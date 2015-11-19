@@ -8,7 +8,12 @@
 
 BIN_DIR = ./Bin
 
-INC_DIRS = /usr/local/include include
+INC_DIRS = include
+
+USED_LIBS += bfd \
+			 dl  \
+			 # opencv_core \
+			 # opencv_higui \
 
 CFG = DEBUG
 
