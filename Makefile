@@ -6,24 +6,17 @@
 # all:
 # @echo "Makefile needs your attention"
 
-BIN_DIR = ./Bin
+# CC = g++
+CC = clang
+CFLAGS += -Wall -DDEBUG -g -rdynamic -std=c++11 -Iinclude
+# LFLAGS += -lopencv_core
 
-INC_DIRS = include
 
-USED_LIBS += bfd \
-			 dl  \
-			 # opencv_core \
-			 # opencv_higui \
+all: toy
 
-CFG = DEBUG
+toy:
+	$(CC) $(CFLAGS) $(LFLAGS) src/main.cpp -o toy
 
-SRC_FILES = ./src/*.cpp
-
-EXE_NAME = toy
-
-CFLAGS += -Wall -DDEBUG -g -rdynamic -std=c++11
-
-include ./CommonCppMakefile
 
 
 # vim:ft=make
