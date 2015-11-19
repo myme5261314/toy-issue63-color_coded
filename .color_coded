@@ -1,5 +1,5 @@
 -x
-c
+c++
 -DDEBUG
 -Iinclude
 -Wall
